@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">A06_GridLayout</string>
+    <string name="backspace">回退</string>
+    <string name="clear">清空</string>
+</resources>
