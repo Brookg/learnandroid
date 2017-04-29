@@ -1,0 +1,50 @@
+Ubuntu 下 Android 开发环境搭建
+2017年4月29日
+
+1. 下载 Android Studio
+   登录网站：http://developers.google.cn，找 Android 条目，获取 Android Studio
+
+2. 将下载后的文件拷贝到想要安装的目录，解压
+
+3. 生成启动器文件。在 /usr/share/applications 目录下新建 android-studio.desktop ，输入：
+
+	[Desktop Entry]
+	Name=Android Studio
+	Comment=Android IDE
+	Exec=/home/brook/Softs/android/android-studio/bin/studio.sh
+	Terminal=false
+	Icon=/home/brook/Softs/android/android-studio/bin/studio.png
+	Type=Application
+	Categories=Development;IDE;
+	Keywords=android
+
+4. 根据官方文档，需要安装以下包：
+   sudo apt-get install lib32z1 lib32ncurses5 libbz2-1.0 lib32stdc++6
+
+5. 启动 Android Studio ，根据提示下载 SDK 等相关组件
+
+6. 接下来为 AVD 的运行安装 KVM 支持，首先安装以下包：
+   sudo apt-get install qemu-kvm libvirt-bin ubuntu-vm-builder bridge-utils 
+
+7. 然后将账户添加到组 kvm 和 libvirt，如本机账户为 brook
+   sudo adduser brook kvm
+   sudo adduser brook libvirt
+
+8. 输入命令：sudo virsh -c qemu:///system list ，若出现一下结果则说明安装成功：
+	Id Name                 State
+	----------------------------------
+
+9. 在 Android Studio 中创建虚拟机，尝试启动，若成功，则环境搭建完成
+   若虚拟机一直启动不了，则进入 sdk/emulator 目录，执行 ./emulator -avd 虚拟机名 ，看看有没有错误提示
+   若出 libGL error: unable to load driver: i965_dri.so 的错误，则进入 sdk/emulator/lib64/libstdc++/ 目录
+   将文件夹中原有的文件备份：mv libstdc++.so.6{,.bak} （注意{}前不要加空格！我加了空格文件不知道移到那里去了）
+   将刚才安装的模块链接过来：sudo ln -s /usr/lib32/libstdc++.so.6 ./
+   再次尝试启动虚拟机。
+   若还不成功，再百度吧...
+
+注意：
+
+1. 安装 KVM 的介绍网址：
+   https://software.intel.com/en-us/blogs/2012/03/12/how-to-start-intel-hardware-assisted-virtualization-hypervisor-on-linux-to-speed-up-intel-android-x86-emulator
+   http://blog.csdn.net/cu_rry/article/details/52850138?locationNum=3&fps=1
+
