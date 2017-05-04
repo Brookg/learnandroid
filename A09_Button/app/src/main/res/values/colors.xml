@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="bbutton_danger_pressed">#FFD2322D</color>
+    <color name="bbutton_danger_edge">#FFD43F3A</color>
+    <color name="bbutton_danger_disable">#A5D9534F</color>
+    <color name="bbutton_danger_disable_edge">#A5D43F3A</color>
+    <color name="bbutton_danger">#FFD9534F</color>
+    <color name="text_font_white">#FFFFFF</color>
+</resources>

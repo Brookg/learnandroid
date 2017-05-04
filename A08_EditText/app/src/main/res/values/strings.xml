@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">A08_EditText</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="hint_user">用户名</string>
+    <string name="hint_phone">电话</string>
+    <string name="hint_pass">密码</string>
+</resources>

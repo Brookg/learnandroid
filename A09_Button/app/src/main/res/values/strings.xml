@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">A09_Button</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="btnOne_enable">按钮可用</string>
+    <string name="btnOne_disable">按钮不可用</string>
+    <string name="btnTwo">按钮状态转换</string>
+</resources>

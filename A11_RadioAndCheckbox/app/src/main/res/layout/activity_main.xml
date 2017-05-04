@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="cn.rabbitb.brook.a11_radioandcheckbox.MainActivity" >
+
+    <TextView
+        android:id="@+id/select_sex_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="@string/select_sex_tip"
+        android:textSize="24sp" />
+
+    <RadioGroup
+        android:id="@+id/sexGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/select_sex_tip"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radioMan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/man"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/radioWoman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/woman"  />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnSexPost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sexGroup"
+        android:text="@string/post" />
+
+    <TextView
+        android:id="@+id/select_fruit_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSexPost"
+        android:text="@string/select_fruit_tip"
+        android:layout_marginTop="10dp"
+        android:textSize="24sp" />
+
+    <!-- 更换选择框样式 android:button ，同时需要在 drawable 中定义资源 -->
+    <!-- 调整文字与选择框之间的间距，使用 android:paddingLeft 即可 -->
+    <CheckBox
+        android:id="@+id/cb_apple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/select_fruit_tip"
+        android:text="@string/apple"
+        android:button="@drawable/checkbox_icon"
+        android:paddingLeft="5dp"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cb_banana"
+        android:layout_below="@id/cb_apple"
+        android:text="@string/banana"
+        android:button="@drawable/checkbox_icon"
+        android:paddingLeft="5dp" />
+
+    <CheckBox
+        android:id="@+id/cb_pear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cb_banana"
+        android:text="@string/pear"
+        android:button="@drawable/checkbox_icon"
+        android:paddingLeft="5dp" />
+
+    <CheckBox
+        android:id="@+id/cb_watermelon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cb_pear"
+        android:text="@string/watermelon"
+        android:button="@drawable/checkbox_icon"
+        android:paddingLeft="5dp" />
+
+</RelativeLayout>
