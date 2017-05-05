@@ -5,4 +5,6 @@
     <string name="btnOne_enable">按钮可用</string>
     <string name="btnOne_disable">按钮不可用</string>
     <string name="btnTwo">按钮状态转换</string>
+
+    <string name="btnWave">水波效果</string>
 </resources>

@@ -9,4 +9,8 @@
     <color name="bbutton_danger_disable_edge">#A5D43F3A</color>
     <color name="bbutton_danger">#FFD9534F</color>
     <color name="text_font_white">#FFFFFF</color>
+
+    <color name="wave_front">#FFFFFF</color>
+    <color name="wave_back">#3086E4</color>
+    <color name="bottom_bg">#40BAF8</color>
 </resources>
