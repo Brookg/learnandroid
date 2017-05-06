@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">A12_ToggleButtonAndSwitch</string>
+    <string name="voiceOn">开启声音</string>
+    <string name="voiceOff">关闭声音</string>
+</resources>
