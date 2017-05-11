@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">A16_ScrollView</string>
+    <string name="toTop">返回顶部</string>
+    <string name="toBottom">返回底部</string>
+</resources>

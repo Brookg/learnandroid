@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">A14_SeekBar</string>
-    <string name="init_progress_tip">当前进度为60</string>
+    <string name="init_progress_tip">当前进度为 60 / 100</string>
     <string name="seekbar_pressed">SeekBar 被按下</string>
     <string name="seekbar_released">SeekBar 被释放</string>
 </resources>
