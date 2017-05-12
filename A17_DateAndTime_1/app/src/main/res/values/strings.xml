@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">A17_DateAndTime_1</string>
+
+    <string name="timerStart">开始计时</string>
+    <string name="timerStop">停止计时</string>
+    <string name="timerReset">重置</string>
+    <string name="timerFormat">格式化</string>
+</resources>
