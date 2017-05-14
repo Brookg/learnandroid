@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">A20_ListView_Simple</string>
+
+    <string name="list_header">表头</string>
+    <string name="list_footer">表尾</string>
+</resources>
