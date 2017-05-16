@@ -1,4 +1,4 @@
-package cn.rabbitb.brook.a20_listview_simple;
+package cn.rabbitb.brook.a21_baseadapter_optimize;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -10,6 +10,8 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import java.util.LinkedList;
+
+import cn.rabbitb.brook.a21_baseadapter_optimize.R;
 
 public class MainActivity extends AppCompatActivity {
 
