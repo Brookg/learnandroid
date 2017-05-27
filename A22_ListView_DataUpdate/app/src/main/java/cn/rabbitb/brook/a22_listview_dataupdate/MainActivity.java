@@ -1,18 +1,14 @@
 package cn.rabbitb.brook.a22_listview_dataupdate;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.LayoutInflater;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
 import java.util.LinkedList;
-
-import cn.rabbitb.brook.a22_listview_dataupdate.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -53,6 +49,24 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 animalCnt++;
                 adapter.add(new Animal("狗", "我是第 " + animalCnt + " 只动物", R.drawable.dog));
+            }
+        });
+        // 对 在第5条记录后增加 按钮的点击事件的监听
+        Button btnAdd5th = (Button) findViewById(R.id.add5th);
+        btnAdd5th.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                animalCnt++;
+                boolean result = adapter.add(5, new Animal("狗", "我是第 " + animalCnt + " 只动物", R.drawable.dog));
+                if(!result) animalCnt--;
+            }
+        });
+        // 对 清空 按钮的点击事件的监听
+        Button btnClear = (Button) findViewById(R.id.clear);
+        btnClear.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                adapter.clear();
             }
         });
     }

@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.LinkedList;
 
@@ -57,11 +58,37 @@ public class AnimalAdapter extends BaseAdapter {
         return convertView;
     }
 
-    public void add(Animal newAnimal) {
+    // 添加元素
+    public boolean add(Animal newAnimal) {
         if(animals == null) {
             animals = new LinkedList<>();
         }
         animals.add(newAnimal);
+        notifyDataSetChanged();
+        return true;
+    }
+
+    // 往特定位置添加元素
+    public boolean add(int pos, Animal newAnimal) {
+        if(animals == null) {
+            animals = new LinkedList<>();
+        }
+        if(animals.size() < pos) {
+//            animals.add(newAnimal);
+            Toast.makeText(context, "数据数量不足，尚未达到5条，不能在第5条后插入", Toast.LENGTH_SHORT).show();
+            return false;
+        } else {
+            animals.add(pos, newAnimal);
+        }
+        notifyDataSetChanged();
+        return true;
+    }
+
+    // 清空
+    public void clear() {
+        if(animals != null) {
+            animals.clear();
+        }
         notifyDataSetChanged();
     }
 

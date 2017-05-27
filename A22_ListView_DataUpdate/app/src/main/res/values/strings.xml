@@ -5,4 +5,6 @@
     <string name="list_footer">表尾</string>
 
     <string name="addOne">增加一条记录</string>
+    <string name="addAfter5th">在第5条后增加</string>
+    <string name="clear">清空</string>
 </resources>
