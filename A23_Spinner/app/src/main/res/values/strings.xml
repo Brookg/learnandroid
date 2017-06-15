@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">A23_Spinner</string>
+
+    <string name="monkey">猴子</string>
+    <string name="snake">蛇</string>
+    <string name="spider">蜘蛛</string>
+    <string name="panda">熊猫</string>
+    <string name="rabbit">兔子</string>
+
+    <string name="degreeTip">请选择您的学历：</string>
+    <string name="animalTip">请选择一只动物：</string>
+</resources>
