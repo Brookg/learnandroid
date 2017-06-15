@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">A24_GridView</string>
+
+    <string name="autumn">秋天</string>
+    <string name="beach">沙滩</string>
+    <string name="boat">船</string>
+    <string name="camping">露营</string>
+    <string name="earth">地球</string>
+    <string name="hunting">狩猎</string>
+    <string name="iceberg">冰川</string>
+    <string name="snowman">雪人</string>
+    <string name="whale">鲸鱼</string>
+</resources>
