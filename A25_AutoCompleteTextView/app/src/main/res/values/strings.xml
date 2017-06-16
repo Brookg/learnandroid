@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">A25_AutoCompleteTextView</string>
+
+    <string name="inputTip">请输入搜索内容</string>
+</resources>
