@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">A27_ViewFlipper_Gesture</string>
+
+    <string name="cat">猫</string>
+    <string name="shop">商店</string>
+    <string name="phone">电话</string>
+    <string name="wine">红酒</string>
+    <string name="terminal">终端</string>
+</resources>

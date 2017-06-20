@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">A28_Toast</string>
+
+    <string name="simpleToast">简单Toast</string>
+    <string name="constructorToast">通过构造方法定制Toast</string>
+    <string name="customizedToast">完全自定义Toast</string>
+</resources>
