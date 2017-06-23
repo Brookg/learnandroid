@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -40,7 +42,31 @@ public class MainActivity extends AppCompatActivity {
         constructor.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                // 设置文字和显示时间
+                Toast toast = Toast.makeText(MainActivity.this, "喵~", Toast.LENGTH_SHORT);
+                // 设置显示的位置
+                toast.setGravity(Gravity.CENTER_HORIZONTAL | Gravity.TOP, 0, 0);
+                // 获取Layout
+                LinearLayout layout = (LinearLayout) toast.getView();
+                // 添加图片
+                ImageView image = new ImageView(MainActivity.this);
+                image.setImageResource(R.drawable.cat);
+                layout.addView(image, 0);
+                // 设置字体颜色和对齐方式
+                TextView text = (TextView) toast.getView().findViewById(android.R.id.message);
+                text.setTextColor(Color.YELLOW);
+                layout.setGravity(Gravity.CENTER_HORIZONTAL);
+                // 显示toast
+                toast.show();
+            }
+        });
 
+        // 完全自定义的Toast
+        Button customized = (Button) findViewById(R.id.customized);
+        customized.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                
             }
         });
     }

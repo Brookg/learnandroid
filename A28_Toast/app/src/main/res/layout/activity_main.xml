@@ -27,4 +27,15 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/simple"
         tools:ignore="RtlHardcoded" />
+
+    <Button
+        android:id="@+id/customized"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/customizedToast"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constructor"
+        tools:ignore="RtlHardcoded" />
 </android.support.constraint.ConstraintLayout>
