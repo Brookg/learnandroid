@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 定义一组单选按钮 -->
+    <!-- checkableBehavior 可选值有3个： single单选， all多选， none普通选项 -->
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/context_menu_red"
+            android:title="@string/option_red" />
+
+        <item
+            android:id="@+id/context_menu_yellow"
+            android:title="@string/option_yellow" />
+
+        <item
+            android:id="@+id/context_menu_green"
+            android:title="@string/option_green" />
+
+        <item
+            android:id="@+id/context_menu_blue"
+            android:title="@string/option_blue" />
+    </group>
+</menu>

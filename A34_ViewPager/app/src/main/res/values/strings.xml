@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">A34_ViewPager</string>
+
+    <string name="page_one">第1页</string>
+    <string name="page_two">第2页</string>
+    <string name="page_three">第3页</string>
+    <string name="page_four">第4页</string>
+
+    <string name="btn_pager_adapter">PagerAdapter 示例</string>
+</resources>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">A29_Notification</string>
+
+    <string name="show_normal">显示普通的Notification</string>
+    <string name="close_normal">关闭普通的Notification</string>
+
+    <string name="hello_cat">我是一只猫，喵～</string>
+    <string name="cat_title">一只猫</string>
+    <string name="cat_from">——喵星</string>
+    <string name="cat_ticker">收到喵星发来的信息</string>
+</resources>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">A32_PopupWindow</string>
+
+    <string name="happy">高兴</string>
+    <string name="sad">悲伤</string>
+
+    <string name="show_popupwindow">显示PopupWindow</string>
+</resources>

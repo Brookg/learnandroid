@@ -4,7 +4,9 @@ import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -66,7 +68,19 @@ public class MainActivity extends AppCompatActivity {
         customized.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                
+                // 将Layout转换成View
+                LayoutInflater inflater = MainActivity.this.getLayoutInflater();
+                View v = inflater.inflate(R.layout.toast, (ViewGroup) findViewById(R.id.toast_layout));
+                // 从View中获取元素，并根据需要设置每个元素的属性
+                ImageView icon = (ImageView) v.findViewById(R.id.icon);
+                TextView msg = (TextView) v.findViewById(R.id.msg);
+                msg.setText(getText(R.string.hello_cat));
+                // 使用自定义View生成Toast
+                Toast toast = new Toast(MainActivity.this);
+                toast.setGravity(Gravity.CENTER, 0, 0);
+                toast.setDuration(Toast.LENGTH_SHORT);
+                toast.setView(v);
+                toast.show();
             }
         });
     }

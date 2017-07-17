@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">A31_SomeDialogs</string>
+
+    <string name="btn_progress_circle">普通圆形进度条对话框</string>
+    <string name="btn_progress_bar_indet">条形不显示进度对话框</string>
+    <string name="btn_progress_bar_det">条形显示进度对话框</string>
+    <string name="btn_datepicker">日期选择器</string>
+    <string name="btn_timepicker">时间选择器</string>
+</resources>

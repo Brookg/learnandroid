@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e0f0f0">
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#aaeeaa"
+        android:padding="10dp"
+        android:text="@string/dialog_title"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/dialog_close"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/btn_exit"
+        android:text="@string/dialog_close"
+        android:textSize="16sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dialog_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:minHeight="100dp"
+        android:text="@string/dialog_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_title" />
+
+    <Button
+        android:id="@+id/go_baidu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/go_baidu"
+        android:background="@drawable/btn_exit"
+        android:textColor="#ffffff"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_content"
+        tools:ignore="HardcodedText,RtlHardcoded"
+        app:layout_constraintRight_toLeftOf="@+id/dialog_cancel"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="8dp" />
+
+    <Button
+        android:id="@+id/dialog_cancel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/dialog_cancel"
+        android:background="@drawable/btn_exit"
+        android:textColor="#ffffff"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_content"
+        tools:ignore="HardcodedText,RtlHardcoded"
+        app:layout_constraintLeft_toRightOf="@+id/go_baidu"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="16dp" />
+</android.support.constraint.ConstraintLayout>

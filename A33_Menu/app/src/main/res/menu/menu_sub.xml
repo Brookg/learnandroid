@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/sub_menu" android:title="@string/text_sub_menu">
+        <menu>
+            <group android:checkableBehavior="none">
+                <item android:id="@+id/sub_menu_red" android:title="@string/option_red" />
+                <item android:id="@+id/sub_menu_yellow" android:title="@string/option_yellow" />
+                <item android:id="@+id/sub_menu_green" android:title="@string/option_green" />
+                <item android:id="@+id/sub_menu_blue" android:title="@string/option_blue" />
+            </group>
+        </menu>
+    </item>
+</menu>
