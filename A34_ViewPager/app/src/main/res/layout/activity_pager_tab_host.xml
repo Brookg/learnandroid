@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.rabbitb.brook.a34_viewpager.PagerTabHostActivity">
+
+    <TextView
+        android:id="@+id/tv4_1"
+        style="@style/pager4textview"
+        android:layout_width="0dp"
+        android:text="@string/page_one"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/tv4_2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv4_2"
+        style="@style/pager4textview"
+        android:layout_width="0dp"
+        android:text="@string/page_two"
+        app:layout_constraintLeft_toRightOf="@+id/tv4_1"
+        app:layout_constraintRight_toLeftOf="@+id/tv4_3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv4_3"
+        style="@style/pager4textview"
+        android:layout_width="0dp"
+        android:text="@string/page_three"
+        app:layout_constraintLeft_toRightOf="@+id/tv4_2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_cursor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="0dp"
+        android:contentDescription="@string/img_cursor_description"
+        android:scaleType="matrix"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv4_2"
+        app:srcCompat="@mipmap/line" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="0dp"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_cursor">
+
+    </android.support.v4.view.ViewPager>
+
+</android.support.constraint.ConstraintLayout>

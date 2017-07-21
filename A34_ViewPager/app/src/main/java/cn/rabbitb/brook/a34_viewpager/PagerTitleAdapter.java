@@ -1,4 +1,4 @@
-package cn.rabbitb.brook.a34_viewpager_pageradapter;
+package cn.rabbitb.brook.a34_viewpager;
 
 import android.support.v4.view.PagerAdapter;
 import android.view.View;
@@ -6,11 +6,13 @@ import android.view.ViewGroup;
 
 import java.util.ArrayList;
 
-public class SimplePagerAdapter extends PagerAdapter {
+public class PagerTitleAdapter extends PagerAdapter {
     private ArrayList<View> views;
+    private ArrayList<String> titles;
 
-    public SimplePagerAdapter(ArrayList<View> views) {
+    public PagerTitleAdapter(ArrayList<View> views, ArrayList<String> titles) {
         this.views = views;
+        this.titles = titles;
     }
 
     @Override
@@ -25,14 +27,19 @@ public class SimplePagerAdapter extends PagerAdapter {
 
     @Override
     public Object instantiateItem(ViewGroup container, int position) {
-        // 将给定位置的View添加到ViewGroup容器中，创建并显示出来
+        // 将指定位置的View添加到ViewGroup中
         container.addView(views.get(position));
-        // 返回一个代表新增页面本身的key，通常返回页面本身就可以
+        // 返回该View的Key，通常是该View本身
         return views.get(position);
     }
 
     @Override
     public void destroyItem(ViewGroup container, int position, Object object) {
         container.removeView(views.get(position));
+    }
+
+    @Override
+    public CharSequence getPageTitle(int position) {
+        return titles.get(position);
     }
 }

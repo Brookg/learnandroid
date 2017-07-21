@@ -7,4 +7,9 @@
     <string name="page_four">第4页</string>
 
     <string name="btn_pager_adapter">PagerAdapter 示例</string>
+    <string name="btn_pager_title_strip">PagerTitleStrip 示例</string>
+    <string name="btn_pager_tab_strip">PagerTabStrip 示例</string>
+    <string name="btn_pager_tab_host">PagerTabHost 示例</string>
+
+    <string name="img_cursor_description">标题的图片指针</string>
 </resources>

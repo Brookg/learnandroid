@@ -16,7 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".PagerAdapterActivity"></activity>
+        <activity android:name=".PagerAdapterActivity" />
+        <activity android:name=".PagerTitleStripActivity" />
+        <activity android:name=".PagerTabStripActivity" />
+        <activity android:name=".PagerTabHostActivity"></activity>
     </application>
 
 </manifest>
