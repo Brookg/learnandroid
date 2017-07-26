@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">A35_DrawerLayout_1</string>
+    
+    <string name="menu_realtime">实时消息</string>
+    <string name="menu_tip">提醒通知</string>
+    <string name="menu_route">活动路线</string>
+    <string name="menu_config">相关设置</string>
+
+    <string name="icon">图标</string>
+</resources>

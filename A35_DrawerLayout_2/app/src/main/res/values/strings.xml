@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">A35_DrawerLayout_2</string>
+
+    <string name="fg_left_tv">左侧Drawer</string>
+
+    <string name="fg_btn_1">菜单项一</string>
+    <string name="fg_btn_2">菜单项二</string>
+    <string name="fg_btn_3">菜单项三</string>
+</resources>
