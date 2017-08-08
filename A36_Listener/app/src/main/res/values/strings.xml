@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">A36_Listener</string>
+
+    <string name="btn_anonymous">使用匿名类</string>
+    <string name="btn_inner">使用内部类</string>
+    <string name="btn_outer">使用外部类</string>
+    <string name="btn_activity">使用Activity作为事件监听类</string>
+    <string name="btn_xml">在XML中指定事件处理方法</string>
+</resources>
