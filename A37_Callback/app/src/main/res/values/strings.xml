@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">A37_Callback</string>
+
+    <string name="my_btn">自定义按钮</string>
+</resources>
