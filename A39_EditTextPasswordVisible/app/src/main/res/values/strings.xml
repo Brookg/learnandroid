@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">A39_EditTextPasswordVisible</string>
+
+    <string name="text_password">请输入密码</string>
+    <string name="btn_toggle">显示/隐藏密码</string>
+    <string name="btn_show">显示密码</string>
+</resources>
